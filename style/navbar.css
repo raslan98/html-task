@@ -1,0 +1,216 @@
+/* Header Navbar */
+
+h4 {
+    font-size: 14px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+#expand {
+    position: relative;
+    cursor: pointer;
+}
+.expand-card {
+    display: none;
+    width: 30%;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    background-color: white;
+    padding: 17px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px #0717411F;
+    transition: all linear 0.2s;
+}
+#expand:hover + .expand-card {
+    display: inline-block;
+}
+.expand-card img {
+    border-radius: 50%;
+    width: 180%;
+}
+.expand-card-name {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.expand-card-mail {
+    margin-left: 10px;
+    font-size: 10px;
+    color: #98A0AC;
+}
+.expand-card-description {
+    margin-left: 10px;
+    padding: 2px 7px;
+    display: inline-block;
+    font-size: 10px;
+    background-color: #FEEAEA;
+    border-radius: 10px;
+    color: #F17360;
+    font-size: 12px;
+}
+.roles-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 7px;
+    flex: 30%;
+    padding: 5px 10px;
+    border: 1px solid #E4E8EE;
+    border-radius: 10px;
+    text-align: center;
+    height: 100px;
+    width: 65px;
+}
+.roles-card-style {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #F17360;
+}
+.roles-card-button {
+    border: 1px solid #FF4B4B;
+    color: #FF4B4B;
+    padding: 5px 10px;
+}
+.description {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    background-color: #1C1C1C;
+}
+.navbar .icon img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: 3%;
+}
+i {
+    position: relative;
+    top: 10px;
+    color: white;
+    margin-right: 13px;
+}
+.navbar-logo {
+    height: 22px;
+    width: 115px;
+    margin-right: 10px;
+}
+.navbar-content {
+    font-size: 10px;
+    margin-left: 10px;
+}
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-left: 13px;
+    margin-right: 10px;
+}
+.avatar-name {
+    margin-right: 10px;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    bottom: 15px;
+}
+.avatar-description {
+    position: absolute;
+    right: 65px;
+    bottom: -5px;
+    color: #98A0AC;
+    font-size: 10px;
+}
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-direction-row-head-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.expand-arrow {
+    position: relative;
+    bottom: 10px;
+    margin-right: 10px;
+    width: 1%;
+}
+.navbar .icon .expand-arrow img {
+    position: relative;
+    top: 12px;
+    width: 100%;
+}
+/* Side Nav */
+
+.side-nav {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0 20px;
+    height: 100%;
+    background-color: #333333;
+    color: white;
+}
+.side-navbar-item {
+    max-height: 150px;
+    text-align: center;
+    width: 34px;
+    transition: all linear 0.2s;
+}
+.side-navbar-item img {
+    margin-right: 10px;
+}
+.active-navbar-item {
+    text-align: right;
+    width: 250px;
+}
+.navbar-item-label {
+    max-width: 150px;
+    font-size: 13px;
+    transition: all linear 0.4s;
+    display: none;
+}
+.active-navbar-item-label {
+    transition: all linear 0.4s;
+    display: inline-block;
+}
+.flex-direction-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+.flex-width {
+    width: 50%
+}
+ul {
+    padding: 0;
+}
+li {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+}
+li i {
+    margin: 0;
+}
+.right-arrow {
+    margin-top: 8px;
+}
+.icon-side-nav {
+    position: relative;
+    left: 14px;
+}

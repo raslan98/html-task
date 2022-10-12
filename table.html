@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Property Table</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e60d26195.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/color.css">
+    <link rel="stylesheet" href="./style/property.css">
+    <link rel="stylesheet" href="./style/table.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <!-- HEADER NAV STARTS -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="header-nav">
+        <a class="navbar-brand" href="#"><img src="./assets/property-logo.png" class="navbar-logo" />|<span
+                class="navbar-content">PROPERTY MANAGEMENT SOLUTION</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="expand" class="icon card-hover color-white" onmouseover="expansion()"><i
+                class="fa-regular fa-bell"></i>|
+            <img src="./assets/avatar.png" class="infobox flex-direction-row-head-nav avatar" />
+            <label class="avatar-name">Mohamed Raslan</label>
+            <label class="avatar-description">Super Admin</label>
+            <span class="expand-arrow"><img src="./assets/arrow.svg" class="expand-arrow" /></span>
+        </div>
+
+        <div class="expand-card">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./assets/avatar.png" />
+                </div>
+                <div class="col-6 md-offest-4">
+                    <div class="expand-card-name">Mohamed raslan</div>
+                    <div class="expand-card-mail">raslan@gmail.com</div>
+                    <div class="expand-card-description">Super admin</div>
+                </div>
+            </div>
+            <hr>
+            <label>Roles</label>
+            <div class="flex">
+                <div class="roles-card">
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
+                    <div class="description">Super Admin</div>
+                </div>
+                <div class="roles-card">
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
+                    <div class="description">Community <br> Manager</div>
+                </div>
+                <div class="roles-card">
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
+                    <div class="description">Security <br> Manager</div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="roles-card">
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
+                    <div class="description">Property <br> Manager</div>
+                </div>
+                <div class="roles-card">
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
+                    <div class="description">Zonal <br> Manager</div>
+                </div>
+                <div class="roles-card">
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
+                    <div class="description">Customer <br> Care</div>
+                </div>
+            </div>
+            <hr>
+            <h3>My Profile</h3>
+            <h3>Privacy Profile</h3>
+            <h3>Terms and Conditions</h3>
+            <button class="roles-card-button">Sign Up</button>
+        </div>
+    </nav>
+    <!-- HEADER NAV STARTS -->
+    <!-- SIDE NAV STARTS -->
+    <div class="side-nav" id="side-nav" onclick="width()">
+        <ul>
+            <div class="side-navbar-item">
+                <li class="flex-direction-row">
+                    <div class="navbar-item-label">Property Manager For Start up</div><span class="blue-circle"><img
+                            src="./assets/right-arrow.png" class="right-arrow icon-side-nav" /></span>
+                </li>
+            </div>
+            <hr />
+            <div class="side-navbar-item">
+                <li class="flex-direction-row flex-width"><img src="./assets/menu-icon.svg" />
+                    <div class="navbar-item-label">Dashboard</div>
+                </li>
+                <li class="flex-direction-row flex-width"><img src="./assets/Leads.png" class="icon-side-nav" />
+                    <div class="navbar-item-label">Companies</div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- SIDE NAV ENDS -->
+    <div class="margin-left">
+        <div class="page-description">
+            <h3 class="black-color">Properties</h3>
+        </div>
+    </div>
+    <div class="search-property">
+        <div class="row">
+            <div class="col-5">
+                <input type="search" placeholder="Search Property" />
+            </div>
+            <div class="col-7">
+                <img src="./assets/funnel.svg" class="funnel" />
+            </div>
+        </div>
+        <table>
+            <tr class="heading">
+                <th>Property Num</th>
+                <th>Property Name</th>
+                <th>Company Name</th>
+                <th>Location</th>
+                <th>Revenue Type</th>
+                <th>Property Type</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>PROP_21</td>
+                <td>Rubix Apartment</td>
+                <td>Property Automate 102</td>
+                <td>T.Nagar,Chennai</td>
+                <td>Sale</td>
+                <td>Apartment</td>
+                <td>Active<i class="fa-solid fa-ellipsis"></i></td>
+            </tr>
+            <tr>
+                <td>PROP_21</td>
+                <td>Rubix Apartment</td>
+                <td>Property Automate 102</td>
+                <td>T.Nagar,Chennai</td>
+                <td>Lease</td>
+                <td>Apartment</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>PROP_21</td>
+                <td>Rubix Apartment</td>
+                <td>Property Automate 102</td>
+                <td>T.Nagar,Chennai</td>
+                <td>Maintain</td>
+                <td>Apartment</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>PROP_21</td>
+                <td>Rubix Apartment</td>
+                <td>Property Automate 102</td>
+                <td>T.Nagar,Chennai</td>
+                <td>Sale</td>
+                <td>Apartment</td>
+                <td>Active</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <button class="footer-button">Cancel</button>
+        <button class="footer-button">Create</button>
+    </footer>
+</body>
+</html>

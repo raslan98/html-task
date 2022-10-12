@@ -1,0 +1,38 @@
+.white-bg {
+    background-color: white;
+}
+.blue-bg {
+    background-color: #5078E1;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+.color-white {
+    color: white;
+}
+.blue-circle {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #5078E1;
+    height: 35px;
+    width: 35px;
+}
+.grey-circle {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #E4E8EE;
+    height: 30px;
+    width: 30px;
+}
+.pink-bg {
+    background-color: #FEEAEA;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 33px;
+}
+.black-color {
+    color: black;
+}
+
+

@@ -1,0 +1,149 @@
+body {
+    background-color: #F5F7FA;
+    overflow-x: hidden;
+}
+hr {
+    background-color: white;
+}
+h3 {
+    font-size: 14px;
+    color: #4E5A6B;
+}
+h5 {
+    font-size: 12px;
+    color: #4E5A6B;
+}
+h6 {
+    display: inline-block;
+    border: 1px solid #E4E8EE;
+    font-size: 14px;
+    padding: 11px 12px 10px 13px;
+    border-radius: 10px;
+}
+.width {
+    width: 100%;
+    margin-left: 2px;
+}
+.text-align-center {
+    text-align: center;
+}
+.margin-right-10 {
+    margin-right: 10;
+}
+.margin-left {
+    margin-left: 75px;
+}
+.margin-left-10 {
+    margin-left: 10px;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+.page-description {
+    padding: 10px 30px;
+    background-color: white;
+}
+.page-description img {
+    zoom: 60%;
+    margin-right: 10px;
+}
+.page-description h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.card-1 {
+    margin: 35px 0 5px 35px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px 10px;
+}
+.card-1 img {
+    margin-top: 12px;
+    zoom: 50%;
+    margin: 0;
+}
+button {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border: 1px solid #E4E8EE;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.card-2 {
+    margin: 35px 20px 6px 0;
+    padding: 16px;
+    border-radius: 8px;
+}
+label {
+    font-size: 12px;
+    color: #98A0AC;
+    margin-top: 15px;
+}
+.card-3 {
+    margin: 20px 20px 6px 34px;
+    padding: 0 5px 15px 5px;
+    border-radius: 8px;
+}
+.card-4 {
+    margin: 20px 20px 50px 34px;
+    padding: 15px 5px 15px 5px;
+    border-radius: 8px;
+}
+select {
+    padding: 10px;
+    border: 1px solid #E4E8EE;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #E4E8EE;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+}
+textarea {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #E4E8EE;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 7px 11px;
+    font-size: 14px;
+}
+.icon-text {
+    border: 1px solid #E4E8EE;
+    padding: 5px 15px;
+    width: 100%;
+    cursor: pointer;
+}
+.icon-text img {
+    margin-right: 15px;
+}
+
+/* FOOTER STARTS HERE */
+
+footer {
+    position: static;
+    background-color: #ffffff;
+    text-align: right;
+    padding-right: 20px;
+}
+.footer-button {
+    font-size: 12px;
+    margin: 10px 0;
+    border: 1px solid #E4E8EE;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
