@@ -25,3 +25,21 @@ function validate() {
     }else 
     alert("Your Mail ID or Your Password is invalid");
 }
+
+
+function showMe() {
+    var cn = document.getElementById("company-name").value;
+    var pn = document.getElementById("property-name").value;
+    var pp = document.getElementById("payment-period").value;
+    var sta = document.getElementById("status").value;
+
+    console.log("{", "Company name:", cn, "," ,"Property name:", pn, "," ,"Payment period:", pp, "," ,"Status:", sta, "}");
+}
+
+function toggleButtonActive(obj) {
+    var acc = document.getElementsByClassName('listing-button');
+    for(var i = 0; i<acc.length; i++) {
+      acc[i].classList.remove('listing-button-active');
+    }
+    obj.classList.add('listing-button-active');
+  }

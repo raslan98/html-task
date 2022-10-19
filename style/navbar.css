@@ -23,9 +23,9 @@ h4 {
     box-shadow: 0px 8px 24px #0717411F;
     transition: all linear 0.2s;
 }
-#expand:hover + .expand-card {
+/* #expand:hover + .expand-card {
     display: inline-block;
-}
+} */
 .expand-card img {
     border-radius: 50%;
     width: 180%;

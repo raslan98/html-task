@@ -38,7 +38,8 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="expand" class="icon card-hover color-white" onmouseover="expansion()"><i class="fa-regular fa-bell"></i>|
+        <div id="expand" class="icon card-hover color-white" onmouseover="expansion()"><i
+                class="fa-regular fa-bell"></i>|
             <img src="./assets/avatar.png" class="infobox flex-direction-row-head-nav avatar" />
             <label class="avatar-name">Mohamed Raslan</label>
             <label class="avatar-description">Super Admin</label>
@@ -60,34 +61,46 @@
             <label>Roles</label>
             <div class="flex">
                 <div class="roles-card">
-                    <div class="pink-bg"><div class="roles-card-style">A</div></div>
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
                     <div class="description">Super Admin</div>
                 </div>
                 <div class="roles-card">
-                    <div class="pink-bg"><div class="roles-card-style">A</div></div>
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
                     <div class="description">Community <br> Manager</div>
                 </div>
                 <div class="roles-card">
-                    <div class="pink-bg"><div class="roles-card-style">A</div></div>
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
                     <div class="description">Security <br> Manager</div>
                 </div>
             </div>
             <div class="flex">
                 <div class="roles-card">
-                    <div class="pink-bg"><div class="roles-card-style">A</div></div>
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
                     <div class="description">Property <br> Manager</div>
                 </div>
                 <div class="roles-card">
-                    <div class="pink-bg"><div class="roles-card-style">A</div></div>
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
                     <div class="description">Zonal <br> Manager</div>
                 </div>
                 <div class="roles-card">
-                    <div class="pink-bg"><div class="roles-card-style">A</div></div>
+                    <div class="pink-bg">
+                        <div class="roles-card-style">A</div>
+                    </div>
                     <div class="description">Customer <br> Care</div>
                 </div>
             </div>
             <hr>
-            <h3>My Profile</h3>        
+            <h3>My Profile</h3>
             <h3>Privacy Profile</h3>
             <h3>Terms and Conditions</h3>
             <button class="roles-card-button">Sign Up</button>
@@ -105,7 +118,7 @@
             </div>
             <hr />
             <div class="side-navbar-item">
-                <li class="flex-direction-row flex-width"><a href="table.html"><img src="./assets/menu-icon.svg" /></a> 
+                <li class="flex-direction-row flex-width"><a href="table.html"><img src="./assets/menu-icon.svg" /></a>
                     <div class="navbar-item-label">Dashboard</div>
                 </li>
                 <li class="flex-direction-row flex-width"><img src="./assets/Leads.png" class="icon-side-nav" />
@@ -125,32 +138,34 @@
                 <img src="./assets/plain-building.png" />
                 <button>Upload Image</button>
             </div>
-            <div class="col-9 white-bg card-2">
+            <div class="col-lg-9 col-sm-12 white-bg card-2">
                 <h5>PROPERTY DETAILS</h5>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label>Company name</label>
-                        <select>
-                            <option>Company Name</option>
-                        </select>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <label>Company name</label>
+                            <select id="company-name">
+                                <option>Company Name</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <label>Property Name</label>
+                            <input type="text" Value="Rubix Apartment" id="property-name" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <label>Payment Period</label>
+                            <select id="payment-period">
+                                <option>Daily</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <label>Status</label>
+                            <select id="status">
+                                <option>Active</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label>Property Name name</label>
-                        <input type="text" Value="Rubix Apartment" />
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label>Payment Period</label>
-                        <select>
-                            <option>Daily</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label>Status</label>
-                        <select>
-                            <option>Active</option>
-                        </select>
-                    </div>
-                </div>
+                </form>
                 <div class="row">
                     <div class="col-12">
                         <label>Property Description</label>
@@ -160,9 +175,9 @@
                             <textarea id="text-area">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </textarea>
                             <div class="icon-text">
-                                <img src="./assets/bold.svg"  />
+                                <img src="./assets/bold.svg" />
                                 <img src="./assets/italic.svg" onclick="textChange()" />
-                                <img src="./assets/underline.svg"  />
+                                <img src="./assets/underline.svg" />
                                 <img src="./assets/strikethru.svg" />
                                 <img src="./assets/numbered-list.svg" />
                                 <img src="./assets/bulleted-list.svg" />
@@ -175,52 +190,52 @@
         <div class="row white-bg card-3 margin-left">
             <div class="col-lg-2 col-sm-12">
                 <label>Property type</label>
-                <input type="text" value="Apartment" />
+                <input type="text" value="Apartment" id="property-type" />
             </div>
             <div class="col-lg-2 col-sm-12">
                 <label>Property purpose</label>
-                <select>
+                <select id="property-purpose">
                     <option>Residential</option>
                 </select>
             </div>
             <div class="col-lg-2 col-sm-12">
                 <label>Revenue type</label>
-                <select>
+                <select id="revenue-style">
                     <option>Revenue type</option>
                 </select>
             </div>
             <div class="col-lg-2 col-sm-12">
                 <label>Measurement Unit</label>
-                <select>
+                <select id="measurement-unit">
                     <option>Sq.Ft</option>
                 </select>
             </div>
             <div class="col-lg-2 col-sm-12">
                 <label>Carpet Area</label>
-                <input type="text" value="10000" />
+                <input type="number" value="10000" id="cacrpet-area" />
             </div>
             <div class="col-lg-2 col-sm-12">
                 <label>Total Area</label>
-                <input type="text" value="165480" />
+                <input type="number" value="165480" id="total-area" />
             </div>
             <div class="row width">
                 <div class="col-lg-2 col-sm-12">
                     <label>Year Built</label>
-                    <input type="date" value="165480" />
+                    <input type="date" id="year-built" />
                 </div>
                 <div class="col-lg-2 col-sm-12">
                     <label>Hand Over Date</label>
-                    <input type="date" value="165480" />
+                    <input type="date" id="hand-over-date" />
                 </div>
                 <div class="col-lg-3 col-sm-12">
                     <label>Public Listing</label> <br>
-                    <h6>None</h6>
-                    <h6>Private</h6>
-                    <h6>Public</h6>
+                    <button class="listing-button" onclick="toggleButtonActive(this)">None</button>
+                    <button class="listing-button" onclick="toggleButtonActive(this)">Private</button>
+                    <button class="listing-button" onclick="toggleButtonActive(this)">Public</button>
                 </div>
                 <div class="col-lg-2 col-sm-12 md-offest-3">
-                    <label>Total Area</label>
-                    <input type="text" value="165480" class="secondary-input" />
+                    <label>Pets Allowed</label>
+                    <input type="radio" class="secondary-input" />
                 </div>
             </div>
         </div>
@@ -231,25 +246,25 @@
             <div class="row width">
                 <div class="col-lg-2 col-sm-12">
                     <label>Business Phone</label>
-                    <input type="text" value="165480" class="secondary-input" />
+                    <input type="number" value="165480" class="secondary-input" id="business-phone" />
                 </div>
                 <div class="col-lg-2 col-sm-12">
-                    <label>Mobile phonee</label>
-                    <input type="text" value="165480" class="secondary-input" />
+                    <label>Mobile phone</label>
+                    <input type="number" value="165480" class="secondary-input" id="mobile-phone" />
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <label>Website</label>
-                    <input type="text" value="165480" class="secondary-input" />
+                    <input type="url" value="165480" class="secondary-input" id="website" />
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <label>Email Address</label>
-                    <input type="text" value="165480" class="secondary-input" />
+                    <input type="email" value="165480" class="secondary-input" id="email-address" />
                 </div>
             </div>
         </div>
         <footer>
             <button class="footer-button">Cancel</button>
-            <button class="footer-button">Create</button>
+            <button class="footer-button" onclick="showMe()">Create</button>
         </footer>
     </div>
 </body>
